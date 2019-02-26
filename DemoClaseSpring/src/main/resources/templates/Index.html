@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Curriculum</title>
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}" media="screen" type="text/css" />
+</head>
+<body>
+
+<div id="datos">
+
+</div>
+
+<div class="container">
+    <header>
+        <img src="/images/logo.png" id="logo"/>
+    </header>
+    <article class="content">
+        <h3>
+            <img th:src="@{${Index.imagen}}" />
+            <div th:text = "'Nombre: ' + ${Index.nombre} + ' ' + ${Index.apellidoPaterno} + ' ' + ${Index.apellidoMaterno}"></div>
+            <div th:text = "'Experiencia: ' + ${Index.experiencia}"></div>
+            <div th:text = "'Habilidades: ' + ${Index.habilidades}"></div>
+            <div th:text = "'Educacion: ' + ${Index.educacion}"></div>
+        </h3>
+    </article>
+
+    <footer>
+        <p>@MisaelAguilarMacias</p>
+    </footer>
+</div>
+
+</body>
+
+</html>
